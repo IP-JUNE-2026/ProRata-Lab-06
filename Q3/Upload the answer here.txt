@@ -1,1 +1,34 @@
-Upload the answer here
+import java.util.Scanner;
+
+public class IT21802812Lab6Q3 {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        int sumOfSquares = 0;
+        int count = 0;
+
+        System.out.println("Enter positive numbers (enter -99 to stop):");
+
+        int number = input.nextInt();
+
+        while (number != -99) {
+            if (number < 0) {
+                System.out.println("Invalid input. Please enter a positive number.");
+            } else {
+                sumOfSquares = sumOfSquares + (number * number);
+                count++;
+            }
+            number = input.nextInt();
+        }
+
+        if (count == 0) {
+            System.out.println("No valid numbers were entered.");
+        } else {
+            double rootMeanSquare = Math.sqrt((double) sumOfSquares / count);
+            System.out.println();
+            System.out.println("Root Mean Square is: " + rootMeanSquare);
+        }
+
+        input.close();
+    }
+}
