@@ -1,0 +1,28 @@
+import java.util.Scanner;
+	
+	public class IT22195616Lab6Q1{
+		
+		public static void main (String[] args){
+			
+			Scanner input = new Scanner(System.in);
+			
+			double number , square , squareRoot;
+			
+			System.out.print("Enter a number : ");
+			number = input.nextDouble ();
+			
+				
+			square = number * number;
+			System.out.println("The square of " + number + " is :" + square);
+			
+			
+			squareRoot = Math.sqrt(number);
+			System.out.println("The squareRoot of " + number + " is :" + squareRoot);
+			
+			System.out.println();
+			
+			
+			input.close();
+			
+		}
+	}
