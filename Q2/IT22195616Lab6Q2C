@@ -1,0 +1,42 @@
+import java.util.Scanner;
+
+public class IT22195616Lab6Q2C{
+
+    public static void main(String[] args){
+	
+        Scanner input = new Scanner(System.in);
+		
+		//Variable declaration
+        int i = 1;
+        int sum = 0;
+        int number;
+        String numbersEntered = "";
+
+        System.out.println("Please enter 10 numbers:");
+
+        while (i <= 10) {
+            System.out.print("Enter number " + i + ": ");
+            number = input.nextInt();
+
+            sum += number;//Calculating sum of entered numbers
+
+            if (i == 10) {
+                numbersEntered += number;
+            } else {
+                numbersEntered += number + " ";
+            }
+
+            i++;//increament
+        }
+		
+		//Calculating average
+        double average = sum / 10.0;
+		
+		//Printing all numbers
+        System.out.println("\nThe numbers you entered are:\n"+numbersEntered);
+		
+		//Printing sum and average
+        System.out.println("\nSum of the numbers: " + sum);
+        System.out.println("Average of the numbers: " + average);
+    }
+}
