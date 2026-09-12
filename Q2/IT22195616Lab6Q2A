@@ -1,0 +1,14 @@
+public class IT22195616Lab6Q2A {
+
+    public static void main(String[] args) {
+		
+        int j = 1;
+
+        while (j <= 10) {
+		
+			System.out.print(j+ " ");
+			
+            j++;
+        }
+    }
+}

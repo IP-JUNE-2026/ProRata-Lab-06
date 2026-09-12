@@ -1,0 +1,32 @@
+import java.util.Scanner;
+
+public class IT22195616Lab6Q2B{
+
+    public static void main(String[] args){
+	
+        Scanner input = new Scanner(System.in);
+		
+		//Variable declaration
+        int i = 1;
+        int number;
+        String numbersEntered = "";
+
+        System.out.println("Please enter 10 numbers:");
+
+        while (i <= 10) {
+            System.out.print("Enter number " + i + ": ");
+            number = input.nextInt();
+
+            if (i == 10) {
+                numbersEntered += number;
+            } else {
+                numbersEntered += number + " ";
+            }
+
+            i++; //increament
+        }
+		
+		//Printing all numbers
+        System.out.println("\nThe numbers you entered are:\n"+numbersEntered);
+    }
+}
